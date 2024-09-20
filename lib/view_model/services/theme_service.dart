@@ -13,6 +13,11 @@ class ThemeService {
       bodyLarge:  const TextStyle(color: AppColors.black),
       bodyMedium: TextStyle(color: AppColors.grey800),
     ),
+    floatingActionButtonTheme: FloatingActionButtonThemeData(
+      backgroundColor: AppColors.green,
+      foregroundColor: AppColors.black,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+    ),
     buttonTheme: const ButtonThemeData(buttonColor: AppColors.green),
   );
 
@@ -26,6 +31,11 @@ class ThemeService {
     textTheme: TextTheme(
       bodyLarge: const TextStyle(color: AppColors.white),
       bodyMedium: TextStyle(color: AppColors.grey400),
+    ),
+    floatingActionButtonTheme: FloatingActionButtonThemeData(
+      backgroundColor: AppColors.green,  // WhatsApp green
+      foregroundColor: AppColors.white,  // Icon color
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)), // Customize shape
     ),
     buttonTheme: const ButtonThemeData(buttonColor: AppColors.green),
   );
