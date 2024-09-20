@@ -1,5 +1,6 @@
 import 'package:echochat/app/app_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class SocialButton extends StatelessWidget {
   final String buttonName;
@@ -26,9 +27,15 @@ class SocialButton extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset(buttonIconPath),
+            SizedBox(
+              height: 30,
+              width: 30,
+              child: Image.asset(buttonIconPath),
+            ),
+            Gap(10),
             Text(
               buttonName,
+              style: TextStyle(fontSize: 18),
             ),
           ],
         ),

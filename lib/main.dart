@@ -3,10 +3,15 @@ import 'package:echochat/route/route_name.dart';
 import 'package:echochat/route/routes.dart';
 import 'package:echochat/view_model/controllers/theme_controller.dart';
 import 'package:echochat/view_model/services/theme_service.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'firebase_options.dart';
+
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  _initFirebase();
   runApp(const MyApp());
 }
 
@@ -35,4 +40,10 @@ class MyApp extends StatelessWidget {
       },
     );
   }
+}
+
+_initFirebase()async{
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
 }

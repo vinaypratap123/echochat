@@ -21,12 +21,12 @@ Widget buildEndDrawer() {
           builder: (controller) {
             return ListTile(
               leading: Icon(Icons.brightness_6),
-              title: Text('Switch Theme'),
+              title: Text('switch_theme'.tr),
               trailing: Switch(
                 activeColor: AppColors.green,
                 value: controller.isDarkMode,
                 onChanged: (value) {
-                  controller.toggleTheme(); // Call toggleTheme on switch change
+                  controller.toggleTheme();
                 },
               ),
             );

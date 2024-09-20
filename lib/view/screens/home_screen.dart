@@ -23,7 +23,7 @@ class HomeScreen extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-        SocialButton(buttonName: "Login with Goolge", onTap: (){}, buttonIconPath: AppImages.googleIcon),
+
       ],),
       floatingActionButton: FloatingActionButton(onPressed: (){},child: Icon(Icons.add_outlined),),
     );

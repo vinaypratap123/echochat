@@ -8,4 +8,6 @@ class AppStrings{
   static const String login = "login";
   static const String signup = "Signup";
 
+  static const madeByVinayWith = "Made By Vinay With ❤️";
+
 }

@@ -1,5 +1,6 @@
 import 'package:echochat/app/app_strings.dart';
 import 'package:echochat/route/route_name.dart';
+import 'package:echochat/view/screens/auth/login_screen.dart';
 import 'package:echochat/view/screens/home_screen.dart';
 import 'package:echochat/view/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
@@ -11,6 +12,11 @@ class Routes {
       case RouteName.splashScreen:
         return MaterialPageRoute(
           builder: (BuildContext context) => const SplashScreen(),
+        );
+        // ------------------------- SPLASH SCREEN ROUTE -------------------------
+      case RouteName.loginScreen:
+        return MaterialPageRoute(
+          builder: (BuildContext context) => const LoginScreen(),
         );
       // ------------------------- HOME SCREEN ROUTE -------------------------
       case RouteName.homeScreen:
